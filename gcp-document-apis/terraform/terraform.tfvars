@@ -1,0 +1,22 @@
+# Ejemplo de archivo de variables para Terraform
+# Copia este archivo a terraform.tfvars y ajusta los valores
+
+# Configuración del proyecto
+      project_id = "avocat-prd"
+region     = "us-central1"
+zone       = "us-central1-a"
+
+# Configuración del ambiente
+environment = "dev"
+force_destroy = false
+
+# Configuración de Document AI
+document_ai_processor_id = "tu-processor-id"
+
+# Configuración de APIs
+vision_api_enabled = true
+
+# Configuración de retención
+backup_retention_days = 365
+ocr_result_retention_days = 90
+processing_result_retention_days = 30
