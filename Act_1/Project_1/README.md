@@ -1,59 +1,88 @@
-# PROJECT1
+# Nexus Books Store
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.2.
+![logo](./src/assets/readme-images/Nexus_Librery.svg)
 
-## Development server
+## Descripción
 
-To start a local development server, run:
+Este proyecto fue desarrollado como parte del máster en **Desarrollo Front-End**, con el propósito de crear una aplicación web funcional y visualmente atractiva que permita:
+
+- Mostrar libros obtenidos desde una API.
+- Presentar información como título, autor, precio e imagen.
+- Aplicar diseño responsive con Bootstrap.
+
+## Características
+
+- Integración con API para mostrar libros.
+- Interfaz responsive con Bootstrap.
+- Arquitectura modular de Angular.
+- Componentes reutilizables.
+- Diseño adaptable a móviles y escritorio.
+
+## Tecnologías Utilizadas
+
+- **Angular v20**
+- **Bootstrap 5.3.8**
+- **TypeScript**
+- **HTML5 / CSS3**
+- **API REST**
+
+## Estructura del Proyecto
+
+Project_1/
+│
+├── src/
+│   ├── app/
+│   │   ├── book-catalog/        # Componente principal de los libros
+│   │   ├── services/            # Servicios para conectar con la API
+│   │   └── app.component.ts     # Componente raíz
+│   │
+│   ├── assets/                  # Imágenes o recursos estáticos
+│   └── index.html
+│
+├── package.json
+└── angular.json
+
+## Instalación y Ejecución
+
+1. Clonar el repositorio:
+
+   ```bash
+   git clone https://github.com/carloserick87/webcraft-frameworks.git
+
+
+---
+
+### 7. **Capturas de Pantalla**
+
+Incluye imágenes o GIFs del proyecto en funcionamiento.
+
+```markdown
+## 🖼️ Capturas de Pantalla
+
+### Página Principal
+![Vista Principal](./src/assets/screenshot_home.png)
+
+## 🌐 API Utilizada
+La aplicación consume datos de la siguiente API:
 
 ```bash
-ng serve
-```
+https://mock.apidog.com/m1/1106172-1096392-default/new_releases
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### 9. **Autor**
 
-```bash
-ng generate component component-name
-```
+Autor: Carlos Erick Trujillo Mandujano
+Programa: Máster Universitario en Diseño y Desarrollo de Interfaz de Usuario Web (MDIUW)
+Institución: Universidad Internacional de La Rioja (UNIR) - España.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-```bash
-ng generate --help
-```
+ 
 
-## Building
 
-To build the project run:
 
-```bash
-ng build
-```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Running unit tests
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

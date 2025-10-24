@@ -1,9 +1,13 @@
+root{
+  --primary-color: rgb(255, 222, 86);
+}
+
 .footer {
   width: 100%;
 }
 
 .footer a:hover {
-  color: rgb(234, 234, 24); /* azul Bootstrap */
+  color: var(--primary-color) ;
   text-decoration: underline;
 }
 
@@ -13,5 +17,5 @@
 
 .footer .bi:hover {
   transform: scale(1.2);
-  color: rgb(234, 234, 24);
+  color: var(--primary-color);
 }
