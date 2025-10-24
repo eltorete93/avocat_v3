@@ -1,0 +1,17 @@
+.footer {
+  width: 100%;
+}
+
+.footer a:hover {
+  color: rgb(234, 234, 24); /* azul Bootstrap */
+  text-decoration: underline;
+}
+
+.footer .bi {
+  transition: transform 0.2s, color 0.2s;
+}
+
+.footer .bi:hover {
+  transform: scale(1.2);
+  color: rgb(234, 234, 24);
+}
