@@ -2,5 +2,5 @@
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ],
-  "outputDirectory": "dist/nexus/browser"
+  "outputDirectory": "Act_2/Project_2/dist/Project_2"
 }
