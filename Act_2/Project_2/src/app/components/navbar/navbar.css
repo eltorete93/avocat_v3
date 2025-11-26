@@ -1,0 +1,42 @@
+
+.custom-navbar {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.nexus {
+  color: var(--firstcolor);
+}
+
+.book {
+  color: var(--secondcolor);
+}
+
+
+
+.nav-link.active:hover {
+  color: var(--secondcolor) !important;
+  opacity: 0.8;
+}
+
+
+.cart-icon {
+  font-size: 20px;
+  line-height: 2 !important;
+  vertical-align: middle !important;
+  display: inline-flex;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .login-btn {
+    width: auto !important;
+  }
+}
+
+
+.custom-navbar .nav-link:hover {
+  color: var(--secondcolor) !important;
+}
+
+

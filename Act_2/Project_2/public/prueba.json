@@ -1,0 +1,33 @@
+
+{
+  "mainTitle": "Próximos Lanzamientos",
+  "upcomingBooks":[
+    {
+      "id": 1,
+      "title": "El Último Guardián",
+      "author": "María Gómez",
+      "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=600&auto=format",
+      "releaseDate": "2025-12-15"
+    },
+    {
+      "id": 2,
+      "title": "Sombras del Pasado",
+      "author": "Carlos Herrera",
+      "image": "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=600&auto=format",
+      "releaseDate": "2025-12-20"
+    },
+    {
+      "id": 3,
+      "title": "El Código de Orión",
+      "author": "Lucía Fernández",
+      "image": "https://images.unsplash.com/photo-1528207776546-365bb710ee93?w=600&auto=format",
+      "releaseDate": "2026-01-10"
+    },
+    {
+      "id": 4,
+      "title": "Más Allá del Horizonte",
+      "author": "Javier Solís",
+      "image": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&auto=format",
+      "releaseDate": "2026-02-01"
+    }
+  ]}

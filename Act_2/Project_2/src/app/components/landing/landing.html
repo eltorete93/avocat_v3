@@ -1,0 +1,24 @@
+<!-- Hero -->
+
+<section class="hero d-flex align-items-center text-center mb-sm-5">
+  <div class="container">
+    <h1 class="display-4 fw-bold">{{ Hero.mainParraph}}</h1>
+    <om-typewriter
+      [words]="[
+        Hero.secondParraph,
+        Hero.thirdParraph,
+        Hero.fourthParraph
+      ]"
+      [writeSpeed]="70"
+      [deleteDelay]="2000"
+      styleClass="typing-hero">
+    </om-typewriter>
+
+    <p class="lead mb-2">{{ Hero.subtittle}}</p>
+
+    <a class="btn btn-outline-light btn-lg mt-3" href="#books">{{ Hero.button}}</a>
+  </div>
+</section>
+
+
+

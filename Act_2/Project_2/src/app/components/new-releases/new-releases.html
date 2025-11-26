@@ -1,0 +1,73 @@
+<!-- Part of the Landing -->
+
+<div class="container py-5">
+  <h2 class="text-center mb-4 fw-bold">{{ latestBooks.mainTittle}}</h2>
+
+  <div class="row g-4">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let book of upcomingBooks">
+      <div class="card h-100 shadow-sm">
+        <img [src]="book.image" class="card-img-top" alt="{{ book.title }}" />
+        <div class="card-body">
+          <h5 class="card-title fw-bold">{{ book.title }}</h5>
+          <p class="card-text text-muted">{{ book.author }}</p>
+          <span class="badge bg-primary">Lanzamiento: {{ book.releaseDate | date }}</span>
+        </div>
+          <div class="card-footer bg-white border-0">
+            <button class="btn btn-dark w-100">Pre-ordenar</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- other section-->
+
+<div class="container my-5">
+
+  <div class="row g-4">
+
+    <!-- CARD 1 -->
+    <div class="col-12 col-md-6">
+      <div class="promo-card d-flex flex-column flex-md-row align-items-center p-4">
+
+        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" class="promo-img me-md-4 mb-3 mb-md-0" alt="Estuche Premio Planeta">
+
+        <div class="text-center text-md-start">
+          <h3 class="promo-title">Estuche Premio Planeta 2025</h3>
+
+          <button class="btn btn-warning mt-3 px-4 shadow-sm">
+            VER ESTUCHE
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="col-12 col-md-6">
+      <div class="promo-card d-flex flex-column flex-md-row align-items-center p-4">
+
+        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" class="promo-img me-md-4 mb-3 mb-md-0" alt="Regalos Navidad">
+
+        <div class="text-center text-md-start">
+          <h3 class="promo-title">Regalos de Navidad 🎄</h3>
+
+          <button class="btn btn-warning mt-3 px-4 shadow-sm">
+            VER REGALOS
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="col-12 col-md-4 offset-md-8">
+      <div class="promo-card p-0 overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" class="img-fluid rounded" alt="Promoción socios">
+      </div>
+    </div>
+
+  </div>
+
+</div>
+

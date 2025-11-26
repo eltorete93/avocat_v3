@@ -1,0 +1,66 @@
+.new-release-card {
+	border: none;
+	overflow: hidden;
+}
+
+.new-release-card .card-img-top {
+	height: 220px;
+	object-fit: cover;
+	transition: transform 0.25s ease;
+}
+
+.new-release-card:hover .card-img-top {
+	transform: scale(1.03);
+}
+
+.new-release-card .cover-overlay {
+	background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25));
+	pointer-events: none;
+}
+
+/* variantes compactas */
+.compact .new-release-card .card-img-top {
+	height: 140px;
+}
+
+.promo-card {
+  background: #f6f6f6;
+  border-radius: 12px;
+  padding: 25px;
+  transition: 0.25s ease;
+}
+
+.promo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.promo-img {
+  width: 150px;
+  border-radius: 8px;
+}
+
+.promo-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.btn-warning {
+  background-color: #e4a200;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-warning:hover {
+  background-color: #cf9200;
+}
+
+@media (max-width: 768px) {
+  .promo-title {
+    font-size: 1.3rem;
+  }
+
+  .promo-img {
+    width: 120px;
+  }
+}

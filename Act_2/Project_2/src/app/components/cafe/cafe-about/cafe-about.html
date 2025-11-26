@@ -1,0 +1,77 @@
+<div class="container py-5">
+  <div class="text-center mb-5">
+    <h1 class="display-5 fw-bold">Sobre Cafetería Nexus</h1>
+    <p class="lead text-muted">Tu hogar lejos del hogar</p>
+  </div>
+
+  <div class="row mb-5">
+    <div class="col-lg-6 mb-4">
+      <img
+        src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=800"
+        alt="Our cafe"
+        class="img-fluid rounded shadow"
+      />
+    </div>
+    <div class="col-lg-6">
+      <h2 class="mb-4">Our Story</h2>
+      <p class="mb-3">
+        Fundada en 2020, Cafetería Nexus nació de la pasión por el buen café y la comunidad.
+        Creemos que una cafetería debe ser más que un simple lugar para tomar algo rápido:
+        debe ser un espacio donde las personas conecten, creen y se sientan como en casa.
+      </p>
+      <p class="mb-3">
+        Nuestro compromiso con la calidad implica que solo utilizamos los mejores granos,
+        colaboramos con panaderos locales y elaboramos cada bebida con esmero.
+        Ya sea que vengas a trabajar, estudiar o simplemente relajarte, hemos creado un ambiente acogedor para todos.
+      </p>
+      <p>
+        <strong>Opening Hours:</strong><br>
+        Lunes - Viernes: 7:00 AM - 9:00 PM<br>
+        Sabado - Domingo: 8:00 AM - 10:00 PM
+      </p>
+    </div>
+  </div>
+
+  <!-- Team Section -->
+  <div class="text-center mb-4">
+    <h2 class="mb-4">Conozca a nuestro equipo</h2>
+    <p class="text-muted">Las personas talentosas detrás de tus bebidas y golosinas favoritas</p>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-md-4" *ngFor="let member of team">
+      <div class="card border-0 shadow-sm text-center">
+        <img [src]="member.image" class="card-img-top rounded-circle mx-auto mt-4" [alt]="member.name" style="width: 150px; height: 150px; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title">{{ member.name }}</h5>
+          <p class="card-text text-muted">{{ member.role }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Values Section -->
+  <div class="row mt-5 pt-5">
+    <div class="col-md-4 mb-4">
+      <div class="text-center">
+        <i class="bi bi-heart-fill text-danger fs-1 mb-3"></i>
+        <h4>La calidad es lo primero</h4>
+        <p class="text-muted">Nunca comprometemos la calidad de nuestros ingredientes o servicio.</p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="text-center">
+        <i class="bi bi-people-fill text-primary fs-1 mb-3"></i>
+        <h4>Enfoque comunitario</h4>
+        <p class="text-muted">Construyendo conexiones y apoyando a nuestra comunidad local.</p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="text-center">
+        <i class="bi bi-globe text-success fs-1 mb-3"></i>
+        <h4>Sostenibilidad</h4>
+        <p class="text-muted">Comprometidos con prácticas ecológicas y abastecimiento responsable.</p>
+      </div>
+    </div>
+  </div>
+</div>
