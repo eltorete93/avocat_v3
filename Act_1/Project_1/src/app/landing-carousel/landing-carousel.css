@@ -1,0 +1,9 @@
+.carousel{
+  width: 85%;
+}
+
+.carousel-img {
+  height: 500px;
+  border-radius: 5px;          /* ajusta la altura a tu gusto */      /* recorta la imagen sin deformarla */
+}
+

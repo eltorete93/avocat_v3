@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "title": "Shoolgirl",
+    "author": "Osamu Dazai",
+    "image": "https://m.media-amazon.com/images/I/713XZ2UvGnL._SY522_.jpg",
+    "category": "Ciencia ficción"
+  },
+  {
+    "id": 2,
+    "title": "The Rose Field",
+    "author": "Philip Pullman",
+    "image": "https://m.media-amazon.com/images/I/91KHFNUUvIL._SY522_.jpg",
+    "category": "Ciencia ficción"
+  },
+  {
+    "id": 3,
+    "title": "The Secret of Secrets",
+    "author": "Dan Brown",
+    "image": "https://m.media-amazon.com/images/I/81dHhoARp9L._SY522_.jpg",
+    "category": "Ciencia ficción"
+  },
+  {
+    "id": 4,
+    "title": "The Alchemised",
+    "author": "TBA SenLinYu",
+    "image": "https://m.media-amazon.com/images/I/91yrUW23XsL._SY522_.jpg",
+    "category": "Ciencia ficción"
+  },
+  {
+    "id": 4,
+    "title": "Divina Comedia",
+    "author": "Dante Alighieri",
+    "image": "https://imagessl6.casadellibro.com/a/l/s5/06/9788411723206.webp",
+    "category": "Clasicos"
+  },
+  {
+    "id": 5,
+    "title": "Don Quijote de la Mancha",
+    "author": "Miguel de Cervantes",
+    "image": "https://m.media-amazon.com/images/I/91EmmpR9I8L._SY522_.jpg",
+    "category": "Clasicos"
+  },
+  {
+    "id": 6,
+    "title": "Lo Fugitivo Permanece",
+    "author": "Francisco de Quevedo",
+    "image": "https://imagessl3.casadellibro.com/a/l/s5/33/9791370091033.webp",
+    "category": "Clasicos"
+  },
+  {
+    "id": 7,
+    "title": "Los Tres Mundos",
+    "author": "Santiago Posteguillo",
+    "image": "https://imagessl.casadellibro.com/a/l/t5/01/9788466682701.jpg",
+    "category": "Clasicos"
+  },
+  {
+    "id": 8,
+    "title": "Alfa",
+    "author": "Ali Hazelwood",
+    "image": "https://imagessl8.casadellibro.com/a/l/t5/99/9788419988799.jpg",
+    "category": "Romance"
+  },
+  {
+    "id": 9,
+    "title": "Blind side",
+    "author": "Kandi Steiner",
+    "image": "https://imagessl5.casadellibro.com/a/l/t5/32/9788408314332.jpg",
+    "category": "Romance"
+  },
+  {
+    "id": 10,
+    "title": "Del Odio al amor solo hay un favor",
+    "author": "Mia Mallen",
+    "image": "https://imagessl1.casadellibro.com/a/l/t5/60/9788410396760.jpg",
+    "category": "Romance"
+  },
+  {
+    "id": 11,
+    "title": "Bajo el sol de Santorini",
+    "author": "Rebecca Raisin",
+    "image": "https://imagessl5.casadellibro.com/a/l/t5/29/9788410643529.jpg",
+    "category": "Romance"
+  },
+  {
+    "id": 12,
+    "title": "El lobo en calzoncillos",
+    "author": "Wilfrid Lupanoo",
+    "image": "https://imagessl5.casadellibro.com/a/l/t5/61/9788467979961.jpg",
+    "category": "Comic"
+  },
+  {
+    "id": 13,
+    "title": "Super Mario",
+    "author": "Yukio Sawada",
+    "image": "https://imagessl5.casadellibro.com/a/l/t5/13/9791387781613.jpg",
+    "category": "Comic"
+  },
+  {
+    "id": 15,
+    "title": "One Piece",
+    "author": "Eiichiro Oda",
+    "image": "https://imagessl6.casadellibro.com/a/l/t5/53/9788410492653.jpg",
+    "category": "Comic"
+  },
+  {
+    "id": 16,
+    "title": "Planeta Manga: Brain Rot",
+    "author": "Carles Dalmau",
+    "image": "https://imagessl5.casadellibro.com/a/l/t5/09/9791387781309.jpg",
+    "category": "Comic"
+  }
+]

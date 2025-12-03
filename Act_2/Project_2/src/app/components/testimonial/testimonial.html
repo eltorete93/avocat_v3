@@ -1,0 +1,75 @@
+<!-- Testimonial -->
+
+<!-- SECCIONES PRINCIPALES -->
+<section class="container my-5">
+
+  <div class="row text-center">
+
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <div><i class="bi bi-book my-icon"></i></div>
+          <h5 class="card-title">Libreria</h5>
+          <p class="card-text">Libros académicos, profesionales y de interés general.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <div><i class="bi bi-pc-display my-icon"></i></div>
+          <h5 class="card-title">Coworking</h5>
+          <p class="card-text">Espacios tranquilos para estudiar o trabajar.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <div><i class="bi bi-cup-hot my-icon"></i></div>
+          <h5 class="card-title">Cafetería</h5>
+          <p class="card-text">Café, snacks y ambiente perfecto para inspirarte.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!--  other -->
+
+<section class="container my-4">
+  <div class="text-center mb-4">
+    <h2>Customer Reviews</h2>
+    <p class="text-muted">What our users think about our product</p>
+  </div>
+
+  <div class="carousel" role="region" aria-label="Testimonials" (mouseenter)="pause()" (mouseleave)="resume()">
+    <button class="nav prev" (click)="prev()" aria-label="Previous testimonial">‹</button>
+
+    <div class="slides">
+      <div class="slide" *ngFor="let t of testimonials; let i = index" [class.active]="i === current" [attr.aria-hidden]="i !== current">
+        <div class="testimonial-card">
+          <div class="testimonial-row">
+            <img class="avatar" [src]="t.avatar" alt="{{t.name}} avatar" />
+            <div>
+              <h3 class="name">{{ t.name }}</h3>
+              <div class="handle">{{ t.handle }}</div>
+            </div>
+          </div>
+          <p class="review">"{{ t.review }}"</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="nav next" (click)="next()" aria-label="Next testimonial">›</button>
+
+    <div class="dots" role="tablist" aria-label="Testimonial navigation">
+      <button *ngFor="let t of testimonials; let i = index" (click)="goTo(i)" [class.active]="i === current" [attr.aria-selected]="i === current" aria-label="Go to testimonial {{i + 1}}"></button>
+    </div>
+  </div>
+
+</section>

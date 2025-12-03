@@ -1,0 +1,21 @@
+root{
+  --primary-color: rgb(255, 222, 86);
+}
+
+.footer {
+  width: 100%;
+}
+
+.footer a:hover {
+  color: var(--primary-color) ;
+  text-decoration: underline;
+}
+
+.footer .bi {
+  transition: transform 0.2s, color 0.2s;
+}
+
+.footer .bi:hover {
+  transform: scale(1.2);
+  color: var(--primary-color);
+}

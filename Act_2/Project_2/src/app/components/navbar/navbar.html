@@ -1,0 +1,88 @@
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top shadow-sm px-4 custom-navbar">
+  <div class="container-fluid">
+
+    <!-- Logo -->
+    <div class="navbar-brand fw-bold">
+      <span class="nexus">{{ brandName.name }} </span>
+      <span class="book">{{  brandName.descriptor }}</span>
+    </div>
+
+    <!-- Hamburger button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNexus"
+      aria-controls="navbarNexus"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu  -->
+    <div class="collapse navbar-collapse" id="navbarNexus">
+
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/home" routerLinkActive="active">{{ menuBar.home }}</a>
+        </li>
+
+        <li class="nav-item ms-3">
+          <a class="nav-link" routerLink="/libros">{{ menuBar.books }}</a>
+        </li>
+
+        <!-- Subcategories 1-->
+        <li class="nav-item dropdown ms-3">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ menuBar.categories}}</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/Ficcion">{{ menuBar.subCategories_1.fiction}}</a></li>
+            <li><a class="dropdown-item" routerLink="/No Ficcion">{{ menuBar.subCategories_1.nonFiction}}</a></li>
+            <li><a class="dropdown-item" routerLink="/Cienca">{{ menuBar.subCategories_1.science}}</a></li>
+            <li><a class="dropdown-item" routerLink="/Historia">{{ menuBar.subCategories_1.history}}</a></li>
+          </ul>
+        </li>
+
+        <!-- Subcategories 2-->
+        <li class="nav-item dropdown ms-3">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ menuBar.coworking}}</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/cafeteria">{{ menuBar.subCategories_2.plans }}</a></li>
+            <li><a class="dropdown-item" routerLink="/cafeteria">{{ menuBar.subCategories_2.reservations }}</a></li>
+            <li><a class="dropdown-item" routerLink="/cafeteria">{{ menuBar.subCategories_2.services }}</a></li>
+            <li><a class="dropdown-item" routerLink="/cafeteria">{{ menuBar.subCategories_2.memberships }}</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item ms-3">
+          <a class="nav-link" routerLink="/cafeteria">{{menuBar.coffeeShop}}</a>
+        </li>
+
+
+        <li class="nav-item ms-3">
+          <a class="nav-link" routerLink="/cafeteria">{{ menuBar.aboutUs }}</a>
+        </li>
+
+        <li class="nav-item ms-3">
+          <a class="nav-link" routerLink="/contacto">{{ menuBar.contact}}</a>
+        </li>
+
+        <!-- Icon car -->
+        <li class="nav-item ms-3">
+          <span class="nav-link material-symbols-outlined d-none d-lg-inline align-middle cart-icon"><i class="bi bi-cart"></i></span>
+          <span class="nav-link d-inline d-lg-none">{{ menuBar.purchase}}</span>
+        </li>
+
+      </ul>
+
+      <!-- Login button, Movil responsive -->
+      <div class="d-flex ms-lg-4 mt-3 mt-lg-0">
+        <button class="btn btn-outline-warning w-100 w-lg-auto login-btn">
+          {{ menuBar.login}}
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>

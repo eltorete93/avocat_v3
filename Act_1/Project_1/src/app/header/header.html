@@ -1,0 +1,74 @@
+<!-- Main Menu-->
+<div class="container">
+  <div class="row">
+    <div class="col">
+
+      <!-- Header -->
+      <header class="bg-light shadow-sm fixed-top"  [ngStyle]="{ 'background-image': 'url(' + backgroundImagen + ')'}">
+
+      <!-- MENÚ SUPERIOR -->
+      <nav class="navbar navbar-expand-lg navbar-light" >
+        <div class="container-fluid px-5">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link fw-semibold" href="#">{{ menuBar.home }}</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold" href="#">{{ menuBar.aboutUs }}</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold" href="#">{{ menuBar.blog }}</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold" href="#">{{ menuBar.events }}</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold" href="#">{{ menuBar.contact }}</a></li>
+          </ul>
+        </div>
+      </nav>
+
+     <!-- LOGO, BUSCADOR Y ACCIONES -->
+     <div class="container-fluid py-2">
+      <div class="row align-items-center text-center text-md-start">
+      <!-- Logo -->
+      <div class="col-md-3 d-flex justify-content-md-start justify-content-center px-5">
+        <img [src]="logo" alt="Nexus Librería logo" class="img-fluid px-5 w-50">
+      </div>
+
+      <!-- Buscador -->
+      <div class="col-md-6 my-2 my-md-0">
+        <div class="input-group">
+          <input type="text" class="form-control rounded-pill" placeholder="Buscar libros..." />
+        </div>
+      </div>
+
+      <!-- Botones de acción -->
+      <div class="col-md-3 d-flex justify-content-md-end justify-content-center align-items-center gap-4">
+        <div class="text-center">
+          <button class="btn btn-outline-secondary rounded-circle">
+            <span class="material-symbols-outlined">account_circle</span>
+          </button>
+          <div class="small">Mi cuenta</div>
+        </div>
+        <div class="text-center px-5">
+          <button class="btn btn-outline-secondary rounded-circle">
+            <span class="material-symbols-outlined">shopping_cart</span>
+          </button>
+          <div class="small">Compras</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CATEGORÍAS -->
+  <div class="bg-white border-top">
+    <div class="container py-2">
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a href="#" class="text-decoration-none text-dark fw-semibold">{{ categories.book_1 }}</a>
+        <a href="#" class="text-decoration-none text-dark fw-semibold">{{ categories.book_2 }}</a>
+        <a href="#" class="text-decoration-none text-dark fw-semibold">{{ categories.book_3 }}</a>
+        <a href="#" class="text-decoration-none text-dark fw-semibold">{{ categories.book_4 }}</a>
+        <a href="#" class="text-decoration-none text-dark fw-semibold">{{ categories.book_5 }}</a>
+        <a href="#" class="text-decoration-none text-dark fw-semibold">{{ categories.book_6 }}</a>
+        <a href="#" class="text-decoration-none text-dark fw-semibold">{{ categories.book_7 }}</a>
+        <a href="#" class="text-decoration-none text-dark fw-semibold">{{ categories.book_8 }}</a>
+        <a href="#" class="text-decoration-none text-dark fw-semibold">{{ categories.book_9 }}</a>
+        <a href="#" class="text-decoration-none text-danger fw-semibold">{{ categories.book_10 }}</a>
+      </div>
+    </div>
+  </div>
+      </header>
+  </div>
+</div>

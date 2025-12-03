@@ -1,0 +1,60 @@
+<app-cafe-nav></app-cafe-nav>
+
+<div class="container py-5">
+  <!-- Back to Home Button -->
+  <div class="mb-4">
+    <a routerLink="/" class="btn btn-outline-dark">
+      <i class="bi bi-arrow-left"></i> Return to Home
+    </a>
+  </div>
+
+  <div class="row align-items-center">
+    <div class="col-lg-6">
+      <h1 class="display-4 fw-bold mb-4">Bienvenido a la Cafetería Nexus</h1>
+      <p class="lead mb-4">
+        Experimente la combinación perfecta de excelente café, deliciosa comida y un ambiente acogedor.
+        Nuestra cafetería es su lugar ideal para trabajar, estudiar o relajarse.
+      </p>
+      <div class="d-flex gap-3">
+        <a routerLink="/cafe/menu" class="btn btn-primary btn-lg">
+          <i class="bi bi-cup-hot"></i> Ver menú
+        </a>
+        <a routerLink="/cafe/contact" class="btn btn-outline-secondary btn-lg">
+          <i class="bi bi-envelope"></i> Contacta con nosotros
+        </a>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <img
+        src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800"
+        alt="Cozy cafe interior"
+        class="img-fluid rounded shadow-lg"
+      />
+    </div>
+  </div>
+
+  <!-- Features Section -->
+  <div class="row mt-5 pt-5">
+    <div class="col-md-4 text-center mb-4">
+      <div class="feature-icon bg-primary bg-gradient text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+        <i class="bi bi-cup-hot fs-2"></i>
+      </div>
+      <h3 class="h5">Cafe Premium</h3>
+      <p class="text-muted">Café recién hecho con los mejores granos del mundo.</p>
+    </div>
+    <div class="col-md-4 text-center mb-4">
+      <div class="feature-icon bg-primary bg-gradient text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+        <i class="bi bi-wifi fs-2"></i>
+      </div>
+      <h3 class="h5">Free WiFi</h3>
+      <p class="text-muted">Conexión a Internet de alta velocidad para trabajar o disfrutar del tiempo libre.</p>
+    </div>
+    <div class="col-md-4 text-center mb-4">
+      <div class="feature-icon bg-primary bg-gradient text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+        <i class="bi bi-book fs-2"></i>
+      </div>
+      <h3 class="h5">Rincón de lectura</h3>
+      <p class="text-muted">Un espacio tranquilo con nuestra colección de biblioteca para los amantes de los libros.</p>
+    </div>
+  </div>
+</div>

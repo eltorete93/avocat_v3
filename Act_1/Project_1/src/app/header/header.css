@@ -1,0 +1,44 @@
+root{
+  --first-color:rgb(247, 242, 236);
+  --font-color:rgb(18, 18, 17);
+}
+
+header{
+   background-size: cover;
+   background-position: center;
+}
+
+
+button{
+  width: 40px;
+  height: 40px;
+  padding:7px
+}
+
+
+.nav-link {
+  color: var(--font-color) !important;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: rgb(84, 84, 79) !important;
+}
+
+.btn-outline-secondary {
+  border: 1px solid #ccc;
+  background-color: rgb(247, 242, 236);
+  color: #3a2b20;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #ffde59
+}
+
+input.form-control {
+  border: 1px solid #ccc;
+}
+
+.text-danger {
+  color: #b35c2e !important;
+}

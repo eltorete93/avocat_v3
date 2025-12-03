@@ -1,0 +1,100 @@
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="text-center mb-5">
+        <h1 class="display-5 fw-bold">Contactactanos</h1>
+        <p class="lead text-muted">We'd love to hear from you! Send us a message.</p>
+      </div>
+
+      <!-- Success Alert -->
+      <div *ngIf="formSuccess" class="alert alert-success alert-dismissible fade show" role="alert">
+        <i class="bi bi-check-circle-fill"></i>
+        <strong>Success!</strong> Tu mensaje se ha enviado correctamente. Nos pondremos en contacto contigo pronto.
+      </div>
+
+      <!-- Contact Form -->
+      <div class="card shadow-sm">
+        <div class="card-body p-4">
+          <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <!-- Name Field -->
+            <div class="mb-3">
+              <label for="name" class="form-label">Nombre<span class="text-danger">*</span></label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                formControlName="name"
+                [class.is-invalid]="submitted && f['name'].errors"
+                placeholder="Enter your full name"
+              />
+              <div *ngIf="submitted && f['name'].errors" class="invalid-feedback">
+                <div *ngIf="f['name'].errors['required']">Name is required</div>
+                <div *ngIf="f['name'].errors['minlength']">Name must be at least 3 characters</div>
+              </div>
+            </div>
+
+            <!-- Email Field -->
+            <div class="mb-3">
+              <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                formControlName="email"
+                [class.is-invalid]="submitted && f['email'].errors"
+                placeholder="your.email@example.com"
+              />
+              <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+                <div *ngIf="f['email'].errors['required']">Email is required</div>
+                <div *ngIf="f['email'].errors['email']">Please enter a valid email address</div>
+              </div>
+            </div>
+
+            <!-- Message Field -->
+            <div class="mb-3">
+              <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+              <textarea
+                class="form-control"
+                id="message"
+                formControlName="message"
+                [class.is-invalid]="submitted && f['message'].errors"
+                rows="5"
+                placeholder="Tell us how we can help you..."
+              ></textarea>
+              <div *ngIf="submitted && f['message'].errors" class="invalid-feedback">
+                <div *ngIf="f['message'].errors['required']">Message is required</div>
+                <div *ngIf="f['message'].errors['minlength']">Message must be at least 10 characters</div>
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary btn-lg">
+                <i class="bi bi-send"></i> Enviar Mensaje
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="row mt-5">
+        <div class="col-md-4 text-center mb-3">
+          <i class="bi bi-geo-alt-fill text-primary fs-2 mb-2"></i>
+          <h5>Location</h5>
+          <p class="text-muted">Calle Principal 123<br>28001 Madrid, Spain</p>
+        </div>
+        <div class="col-md-4 text-center mb-3">
+          <i class="bi bi-telephone-fill text-primary fs-2 mb-2"></i>
+          <h5>Phone</h5>
+          <p class="text-muted">+34 123 456 789<br>Mon-Fri: 9AM-6PM</p>
+        </div>
+        <div class="col-md-4 text-center mb-3">
+          <i class="bi bi-envelope-fill text-primary fs-2 mb-2"></i>
+          <h5>Email</h5>
+          <p class="text-muted">info@cafeterianexus.com<br>support@cafeterianexus.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

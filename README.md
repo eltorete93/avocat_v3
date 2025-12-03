@@ -1,44 +1,71 @@
-usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
-           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
-           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
-           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
-           [--config-env=<name>=<envvar>] <command> [<args>]
+# Desarrollo Web con Frameworks Front-End
 
-These are common Git commands used in various situations:
+![Universidad_Internacional_Unir_logo](./img/Logo_UNIR.svg)
 
-start a working area (see also: git help tutorial)
-   clone     Clone a repository into a new directory
-   init      Create an empty Git repository or reinitialize an existing one
+## Descripción
 
-work on the current change (see also: git help everyday)
-   add       Add file contents to the index
-   mv        Move or rename a file, a directory, or a symlink
-   restore   Restore working tree files
-   rm        Remove files from the working tree and from the index
+Estos proyectos fueron desarrollados como parte del máster en **Desarrollo Front-End**, dentro de la materia **Desarrollo Web con Frameworks**, con el propósito de aplicar los conocimientos adquiridos en la creación de **aplicaciones web funcionales, escalables y visualmente atractivas**.
 
-examine the history and state (see also: git help revisions)
-   bisect    Use binary search to find the commit that introduced a bug
-   diff      Show changes between commits, commit and working tree, etc
-   grep      Print lines matching a pattern
-   log       Show commit logs
-   show      Show various types of objects
-   status    Show the working tree status
+Durante la materia se trabaja con frameworks modernos como **Angular** y **Vue.js**, explorando sus características, estructura modular y buenas prácticas de desarrollo.  
+El objetivo principal es diseñar e implementar **interfaces de usuario interactivas** que cumplan con criterios de **usabilidad, accesibilidad y rendimiento**.
 
-grow, mark and tweak your common history
-   branch    List, create, or delete branches
-   commit    Record changes to the repository
-   merge     Join two or more development histories together
-   rebase    Reapply commits on top of another base tip
-   reset     Reset current HEAD to the specified state
-   switch    Switch branches
-   tag       Create, list, delete or verify a tag object signed with GPG
+## Objetivos de la materia
 
-collaborate (see also: git help workflows)
-   fetch     Download objects and refs from another repository
-   pull      Fetch from and integrate with another repository or a local branch
-   push      Update remote refs along with associated objects
+- Comprender la arquitectura y ciclo de vida de componentes en Angular y Vue.js.
+- Implementar comunicación entre componentes y consumo de servicios.
+- Aplicar estilos y layouts responsive utilizando Bootstrap o Tailwind.
+- Integrar APIs externas para mostrar información dinámica.
 
-'git help -a' and 'git help -g' list available subcommands and some
-concept guides. See 'git help <command>' or 'git help <concept>'
-to read about a specific subcommand or concept.
-See 'git help git' for an overview of the system.
+## Tecnologías Utilizadas
+
+- **Angular v20**
+- **Vue.js 3+**
+- **Bootstrap 5.3.8**
+- **TypeScript**
+- **HTML5 / CSS3**
+- **API REST**
+
+## Instalación y Ejecución
+
+1. Clonar el repositorio:
+
+   ```bash
+   git clone https://github.com/carloserick87/webcraft-frameworks.git
+
+
+---
+
+### 7. **Capturas de Pantalla**
+
+Incluye imágenes o GIFs del proyecto en funcionamiento.
+
+```markdown
+## 🖼️ Capturas de Pantalla
+
+### Página Principal
+![Vista Principal](./src/assets/screenshot_home.png)
+
+## 🌐 API Utilizada
+La aplicación consume datos de la siguiente API:
+
+```bash
+https://mock.apidog.com/m1/1106172-1096392-default/new_releases
+
+
+---
+
+### 9. **Autor**
+
+Autor: Carlos Erick Trujillo Mandujano
+Programa: Máster Universitario en Diseño y Desarrollo de Interfaz de Usuario Web (MDIUW)
+Institución: Universidad Internacional de La Rioja (UNIR) - España.
+
+
+ 
+
+
+
+
+
+
+
