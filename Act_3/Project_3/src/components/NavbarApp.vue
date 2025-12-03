@@ -7,53 +7,46 @@
         <!-- Logo -->
         <div class="flex items-center space-x-3">
           <img src="../assets/nexus_logo.png" alt="Nexus Logo" class="h-10 w-auto" />
-          <span class="text-xl font-semibold">Nexus</span>
+          <span class="text-xl font-semibold">{{ NavBar.name }}</span>
         </div>
 
-        <!-- MENU PARA ESCRITORIO -->
+        <!-- Desktop Menu -->
         <div class="hidden md:flex space-x-6 text-lg ml-auto mr-6">
-          <RouterLink to="/" class="hover:text-orange-300">Inicio</RouterLink>
-          <RouterLink to="/books" class="hover:text-orange-300">Libros</RouterLink>
-          <RouterLink to="/aboutUs" class="hover:text-orange-300">Sobre nosotros</RouterLink>
-          <RouterLink to="/coworking" class="hover:text-orange-300">Coworking</RouterLink>
-          <RouterLink to="/cafeteria" class="hover:text-orange-300">Cafeteria</RouterLink>
-          <RouterLink to="/contact" class="hover:text-orange-300">Contacto</RouterLink>
+          <RouterLink to="/" class="hover:text-orange-300">{{ NavBar.home }}</RouterLink>
+          <RouterLink to="/books" class="hover:text-orange-300">{{ NavBar.books }}</RouterLink>
+          <RouterLink to="/aboutUs" class="hover:text-orange-300">{{ NavBar.aboutUs }}</RouterLink>
+          <RouterLink to="/coworking" class="hover:text-orange-300">{{ NavBar.coworking }}</RouterLink>
+          <RouterLink to="/cafeteria" class="hover:text-orange-300">{{ NavBar.cafeteria }}</RouterLink>
+          <RouterLink to="/contact" class="hover:text-orange-300">{{ NavBar.contact }}</RouterLink>
           <RouterLink to="/shop" class="hover:text-orange-300"><ShoppingCartIcon class="h-6 w-6"/></RouterLink>
         </div>
 
-        <!-- BOTÓN LOGIN (ESCRITORIO) -->
+        <!-- Login button (desktop) -->
         <div class="hidden md:flex">
           <RouterLink to="/login" class="bg-orange-400 text-black px-4 py-2 rounded-lg font-medium hover:bg-orange-300 transition">
-            Login
+            {{ NavBar.login }}
           </RouterLink>
         </div>
 
-        <!-- BOTÓN HAMBURGUESA (MÓVIL) -->
+        <!-- Hamburger button (mobile) -->
         <button @click="isOpen = !isOpen" class="md:hidden text-white focus:outline-none text-3xl">
-          ☰
+          {{ NavBar.icon }}
         </button>
       </div>
     </div>
 
-    <!-- MENÚ MÓVIL -->
+    <!-- Mobile menu -->
     <div v-if="isOpen" class="md:hidden bg-[#2c414f] px-4 pb-4 space-y-3 text-lg">
-      <RouterLink class="block hover:text-orange-300" to="/">Inicio</RouterLink>
-      <RouterLink class="block hover:text-orange-300" to="/libros">Libros</RouterLink>
-      <RouterLink class="block hover:text-orange-300" to="/sobre-nosotros"
-        >Sobre nosotros</RouterLink
-      >
-      <RouterLink class="block hover:text-orange-300" to="/categorias">Categorías</RouterLink>
-      <RouterLink class="block hover:text-orange-300" to="/coworking">Coworking</RouterLink>
-      <RouterLink class="block hover:text-orange-300" to="/contacto">Contacto</RouterLink>
-      <RouterLink class="block hover:text-orange-300" to="/carrito"
-        ><ShoppingCartIcon class="h-6 w-6"
-      /></RouterLink>
+      <RouterLink to="/" class="block hover:text-orange-300">{{ NavBar.home }}</RouterLink>
+      <RouterLink to="/books" class="block hover:text-orange-300">{{ NavBar.books }}</RouterLink>
+      <RouterLink to="/aboutUs" class="block hover:text-orange-300">{{ NavBar.aboutUs }}</RouterLink>
+      <RouterLink to="/coworking" class="block hover:text-orange-300">{{ NavBar.coworking }}</RouterLink>
+      <RouterLink to="/cafeteria" class="block hover:text-orange-300">{{ NavBar.cafeteria }}</RouterLink>
+      <RouterLink to="/contact" class="block hover:text-orange-300">{{ NavBar.contact }}</RouterLink>
+      <RouterLink to="/shop" class="block hover:text-orange-300"><ShoppingCartIcon class="h-6 w-6"/></RouterLink>
 
-      <RouterLink
-        to="/login"
-        class="block bg-orange-400 text-black px-4 py-2 rounded-lg font-medium hover:bg-orange-300 transition"
-      >
-        Login
+      <RouterLink to="/login" class="block bg-orange-400 text-black px-4 py-2 text-center rounded-lg font-medium hover:bg-orange-300 transition">
+        {{ NavBar.login }}
       </RouterLink>
     </div>
   </nav>
@@ -62,6 +55,18 @@
 <script setup>
 import { ref } from 'vue'
 import { ShoppingCartIcon } from '@heroicons/vue/24/outline'
+
+const NavBar = {
+  name:'Nexus',
+  home:'Inicio',
+  books:'Libros',
+  aboutUs:'Sobre nosotros',
+  coworking:'Coworking',
+  cafeteria:'Cafeteria',
+  contact:'Contacto',
+  icon:'☰',
+  login:'Iniciar Sesión'
+};
 
 const isOpen = ref(false)
 </script>
